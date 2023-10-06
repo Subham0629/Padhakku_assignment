@@ -4,7 +4,7 @@ const userRoutes = require("./routes/userRoutes");
 const postRoutes = require("./routes/postRoutes");
 require('dotenv').config()
 const app = express();
-
+app.use(cors());
 // Connect to MongoDB
 mongoose.connect(process.env.mongoURL, {
   useNewUrlParser: true,
