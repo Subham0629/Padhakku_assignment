@@ -2,7 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const userRoutes = require("./routes/userRoutes");
 const postRoutes = require("./routes/postRoutes");
+const cors = require('cors');
 require('dotenv').config()
+
 const app = express();
 app.use(cors());
 // Connect to MongoDB
